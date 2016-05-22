@@ -1,18 +1,41 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
-  #main-content{
-
-  }
+  font-family: Open, sans-serif;
+  font-size: 15px;
 
 }
 
 #timer-display{
-  width: 100%;
-  margin: auto;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 1% auto;
   font-size: 5em;
   text-align: center;
-  //border: 2px solid #ccc;
+  border: 2px solid #ccc;
+}
+
+#info-article{
+  width: 50%;
+  margin: 1% auto;
+  font-size: 1.4em;
+  font-weight: 400;
+
+  h3{
+    border-bottom: 1px solid #ccc;
+  }
+
+  span{
+    font-weight: 100;
+  }
+
+  code{
+    display: block;
+    padding: 15px;
+    border: 1px solid #848484;
+    border-radius: 10px;
+    background: #e6e6e6;
+  }
+
 
 }
 

@@ -5,14 +5,12 @@ import Timer from '../Components/Timer/TimerComponent'
 const HomeComponent = props => {
   return (
     <div>
-      <h1>Home</h1>
-      
+      <h2>Timer Example</h2>
       <Timer 
-        startTime={100}
-        stopTime={0}
-        rate={10}
+        startTime={0}
+        stopTime={5}
+        countRate={1000}
       />
-      
     </div>
   )
 };

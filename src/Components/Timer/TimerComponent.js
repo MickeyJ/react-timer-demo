@@ -2,51 +2,34 @@ import React, { Component, PropTypes } from 'react'
 
 import TimerDisplay from './TimerDisplay'
 
+/** @namespace this */
+
 class TimerContainer extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      count: props.startTime
-    };
-    this.time = props.startTime + 1;
+    this.state = { count: props.startTime };
+    this.currentTime = props.startTime;
     this.stopTime = props.stopTime;
-    this.right = true
+    this.countRate = props.countRate;
+    this.message = 'Done!'
   }
   componentWillMount(){
     this.timer = setInterval(() =>{
-      this.time--;
+      this.currentTime++;
       this.setState({
-        count: this.time
+        count: this.currentTime
       });
-      if(this.time == this.stopTime){
+      if(this.currentTime === this.stopTime)
         clearInterval(this.timer);
-        this.right = false;
-
-        this.timer = setInterval(() =>{
-          this.time++;
-          this.setState({
-            count: this.time
-          });
-          if(this.time == this.props.startTime){
-            clearInterval(this.timer);
-          }
-        }, this.props.rate);
-
-      }
-    }, this.props.rate);
+    }, this.countRate);
   }
-
   componentWillUnmount(){
     clearInterval(this.timer)
   }
-
   render(){
     return(
       <div>
-        <TimerDisplay
-          count={this.state.count}
-          right={this.right}
-        />
+        <TimerDisplay count={this.state.count} />
       </div>
     )
   }
@@ -54,7 +37,8 @@ class TimerContainer extends Component {
 
 TimerContainer.propTypes ={
   startTime: PropTypes.number.isRequired,
-  rate: PropTypes.number.isRequired
+  stopTime: PropTypes.number.isRequired,
+  countRate: PropTypes.number.isRequired
 };
 
 export default TimerContainer

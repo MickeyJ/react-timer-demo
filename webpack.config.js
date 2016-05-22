@@ -14,10 +14,7 @@ const config = {
     }
   },
   plugins: [
-    new OpenBrowserPlugin({url: 'http://localhost:8080'}),
-    new webpack.ProvidePlugin({
-      d3: 'd3'
-    })
+    new OpenBrowserPlugin({url: 'http://localhost:8080'})
   ],
   module: {
     loaders: [
