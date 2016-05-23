@@ -6,7 +6,7 @@ const AboutComponent = props => {
       <h1>State vs Props</h1>
       
       <section id="info-article">
-        <p>React provides two types of data, "props" and "state".</p>
+        <p>React provides two handling data, "props" and "state".</p>
         <article>
           <h3>Props</h3>
           <p>...are READ ONLY.</p>
@@ -26,10 +26,10 @@ const AboutComponent = props => {
         </article>
         <article>
           <h3>State</h3>
-          <p>...can be changed!</p>
+          <p>...can be changed.</p>
           <p>However, it must be done in a specific way.</p>
           <p>
-            <span>Declare stateful properties inside the constructor</span>
+            <span>Declare state keys/values like this, inside the constructor</span>
             <code>
               {`this.state = { count: this.props.startTime }`}
             </code>
