@@ -17,17 +17,20 @@
     float: right;
     font-size: 1.4em;
 
+    a{
+      text-decoration: none;
+    }
+
     .page-link{
       color: DodgerBlue;
     }
 
     .active{
       color: MediumSeaGreen;
+      border-bottom: 1px solid #ccc;
     }
 
   }
-
-
 
   &:after{
     content: '';

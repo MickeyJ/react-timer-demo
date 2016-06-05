@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TimerDisplay = props => (
-  <div id="timer-display">
+  <div className="timer-display">
     <span className="count">
       {props.count}
     </span>

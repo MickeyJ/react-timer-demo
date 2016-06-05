@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('Learn-React-Falcor:server');
+var debug = require('debug')('react-timer-demo:server');
 var http = require('http');
 
 /**

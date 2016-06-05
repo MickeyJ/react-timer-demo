@@ -1,13 +1,11 @@
 import React from 'react'
 
-import googleTTS from 'google-tts-api'
+const AboutPage = () => (
+  <section>
 
+    <h2>... awesome.</h2>
 
-const AboutComponent = props => {
-  return (
-    <div>
+  </section>
+);
 
-    </div>
-  )
-};
-export default AboutComponent
+export default AboutPage
