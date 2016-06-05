@@ -5,7 +5,7 @@ import TimerComponent from '../Components/Timer/TimerComponent'
 const HomePage = () => (
   <section>
     
-    <h2>Timer Example</h2>
+    <h2>Some Timer Components</h2>
     
     <TimerComponent 
       startTime={0}
