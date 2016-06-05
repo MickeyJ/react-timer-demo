@@ -5,9 +5,6 @@ const TimerDisplay = props => (
     <span className="count">
       {props.count}
     </span>
-    <span>
-      {props.message}
-    </span>
   </div>
 );
 

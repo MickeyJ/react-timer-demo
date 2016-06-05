@@ -36,11 +36,7 @@ class TimerContainer extends Component {
     }, this.countRate);
   }
   render(){
-    return(
-      <div>
-        <TimerDisplay count={this.state.count} />
-      </div>
-    )
+    return <TimerDisplay count={this.state.count} />
   }
 }
 

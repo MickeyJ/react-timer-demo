@@ -6,7 +6,7 @@ const NavHeader = () =>(
   <div id="nav-header">
 
     <header>
-      <h1>React Demo</h1>
+      <h1>React Timer Demo</h1>
     </header>
 
     <nav>

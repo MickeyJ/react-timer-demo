@@ -7,6 +7,7 @@ const config = {
     path: './public/',
     filename: 'bundle.js'
   },
+  devtool: 'cheap-module-source-map',
   devServer: {
     contentBase: 'public',
     historyApiFallback:{
