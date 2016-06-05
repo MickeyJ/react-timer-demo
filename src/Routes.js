@@ -5,7 +5,7 @@ import Layout from './Layout/Layout'
 import HomeComponent from './Pages/Home.js'
 import AboutComponent from './Pages/About.js'
 
-const AppRouter = () =>(
+const Routes = () =>(
   <Router history={browserHistory}>
     <Route component={Layout}>
       <Route path="/" component={HomeComponent}/>
@@ -14,4 +14,4 @@ const AppRouter = () =>(
   </Router>
 );
 
-export default AppRouter
+export default Routes

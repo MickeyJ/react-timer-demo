@@ -1,12 +1,11 @@
 import React from 'react'
 import { render } from 'react-dom'
-import 'd3'
 
 import './Style/main.scss'
 
-import AppRouter from './AppRouter'
+import Routes from './Routes'
 
 render(
-  <AppRouter />,
+  <Routes />,
   document.getElementById('app')
 );
